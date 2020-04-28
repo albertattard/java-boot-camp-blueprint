@@ -1,7 +1,7 @@
 package demo;
 
 public class App {
-    public static void main( String[] args ) {
-        System.out.println( "a simple app" );
-    }
+  public static void main( String[] args ) {
+    System.out.println( "a simple app" );
+  }
 }
