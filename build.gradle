@@ -1,23 +1,19 @@
 plugins {
   id 'java'
   id 'application'
+
+  id 'com.dorongold.task-tree' version '1.5'
+  id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
 repositories {
   jcenter()
 }
 
-application {
-  mainClassName = 'demo.App'
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0-M1'
 }
 
-jar {
-  manifest {
-    attributes 'Main-Class': application.mainClassName
-  }
-  from {
-    configurations.runtimeClasspath.collect {
-      it.isDirectory() ? it : zipTree(it)
-    }
-  }
+application {
+  mainClassName = 'demo.App'
 }
