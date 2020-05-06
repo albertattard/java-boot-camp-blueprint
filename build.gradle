@@ -17,3 +17,10 @@ dependencies {
 application {
   mainClassName = 'demo.App'
 }
+
+test {
+  useJUnitPlatform()
+  testLogging {
+    events = ['FAILED', 'PASSED', 'SKIPPED', 'STANDARD_OUT']
+  }
+}
