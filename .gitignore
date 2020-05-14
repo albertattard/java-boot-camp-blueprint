@@ -1,4 +1,11 @@
+# Folders
 .gradle
 .idea
-clean
+.settings
+.vscode
+bin
 build
+
+# Files
+.classpath
+.project

@@ -6,6 +6,11 @@ plugins {
   id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
+java {
+  sourceCompatibility = JavaVersion.VERSION_14
+  targetCompatibility = JavaVersion.VERSION_14
+}
+
 repositories {
   jcenter()
 }
