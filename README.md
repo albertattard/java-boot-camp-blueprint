@@ -1,4 +1,4 @@
-# Java Boot Camp Blank Project
+# Java Boot Camp Starter Project
 
 Useful commands
 
