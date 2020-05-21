@@ -9,5 +9,5 @@ RUN ./gradlew build
 
 FROM adoptopenjdk/openjdk14:jre-14.0.1_7-alpine
 WORKDIR /opt/app
-COPY --from=builder /opt/app/build/libs/demo.jar ./application.jar
+COPY --from=builder /opt/app/build/libs/demo-all.jar ./application.jar
 CMD ["java", "-jar", "application.jar"]
